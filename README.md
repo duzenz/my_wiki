@@ -1,24 +1,31 @@
-# docker commands
+# Docker commands
 
-#List all containers (only IDs)
+# List all containers (only IDs)
 
+```docker
 docker ps -aq
+```
 
-#Stop all running containers
-
+# Stop all running containers
+```docker
 docker stop $(docker ps -aq)
+```
+# Remove all containers
 
-#Remove all containers
-
+```docker
 docker rm $(docker ps -aq)
+```
 
-#Remove all images
+# Remove all images
 
+```docker
 docker rmi $(docker images -q)
+```
+
 
 ## **Configure logback log level via environment variables**
 
-Declae a new variable inside your logback.xml file and provide a default value for logging level.
+Declare a new variable inside your logback.xml file and provide a default value for logging level.
 
 ```xml
 <variable name="SERVICE_LOG_LEVEL" value="${SERVICE_LOG_LEVEL:-DEBUG}" />
