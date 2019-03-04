@@ -2,24 +2,33 @@
 
 # List all containers (only IDs)
 
-```docker
+```bash
 docker ps -aq
 ```
 
 # Stop all running containers
-```docker
+
+```bash
 docker stop $(docker ps -aq)
 ```
 # Remove all containers
 
-```docker
+```bash
 docker rm $(docker ps -aq)
 ```
 
 # Remove all images
 
-```docker
+```bash
 docker rmi $(docker images -q)
+```
+
+
+# Remove images from registry
+
+```bash
+rm -r <root>/v2/repositories/${name}/_manifests/tags/${tag}/index/sha256/${hash}
+rm -r <root>/v2/repositories/${name}/_manifests/revisions/sha256/${hash}
 ```
 
 
