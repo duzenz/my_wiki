@@ -1,36 +1,46 @@
 # Docker commands
 
-# List all containers (only IDs)
+##  List all containers (only IDs)
 
 ```bash
 docker ps -aq
 ```
 
-# Stop all running containers
+##  Stop all running containers
 
 ```bash
 docker stop $(docker ps -aq)
 ```
-# Remove all containers
+## Remove all containers
 
 ```bash
 docker rm $(docker ps -aq)
 ```
 
-# Remove all images
+##  Remove all images
 
 ```bash
 docker rmi $(docker images -q)
 ```
 
-
-# Remove images from registry
+##  Remove images from registry
 
 ```bash
 rm -r <root>/v2/repositories/${name}/_manifests/tags/${tag}/index/sha256/${hash}
 rm -r <root>/v2/repositories/${name}/_manifests/revisions/sha256/${hash}
 ```
 
+##  How to Update a Single Running docker-compose Container
+
+```bash
+docker-compose stop <service_name>
+docker-compose kill <service_name>
+docker-compose up -d --no-deps <service_name>
+```
+
+```bash
+docker-compose up -d --no-deps --build <service_name> 
+```
 
 ## **Configure logback log level via environment variables**
 
