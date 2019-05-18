@@ -19,3 +19,8 @@ tar czf output_name.tar.gz zipped_folder_name/
 ```bash
 tar -xvzf output_name.tar.gz
 ```
+
+# See Ram Information
+```bash
+sudo dmidecode --type 17
+```
