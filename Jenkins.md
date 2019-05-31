@@ -128,3 +128,29 @@ maven-plugin
 skip-certificate-check
 windows-slaves
 ```
+
+## Node.js need to be installed and configured
+- https://nodejs.org/en/
+- npm config set proxy http://ip:port/ --global
+- npm config set https-proxy http://ip:port/ --global 
+- npm config set strict-ssl false --global
+- npm config set registry http://registry.npmjs.org –-global
+
+## Yarn need to be installed and configured
+- npm install -g yarn
+- yarn --version
+- yarn config set strict-ssl false –global
+- yarn config set proxy http://ip:port/ --global
+- yarn config set https-proxy http://ip:port/ --global
+
+## Environment variables need to be configured
+- set HTTP_PROXY=http://ip:port/
+- set HTTPS_PROXY=http://ip:port/
+
+
+> ` mvn clean package -U -Ddockerfile.skip`
+
+### If you get line separator error
+- Go to root folder of the related project and type:
+> `git config core.autocrlf`
+> `yarn install`
