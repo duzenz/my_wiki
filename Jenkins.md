@@ -9,6 +9,7 @@ Jenkins.instance.pluginManager.plugins.each{
 }
 ```
 
+```
 pipeline-build-step
 github-pr-coverage-status
 PrioritySorter
@@ -126,3 +127,4 @@ workflow-step-api
 maven-plugin
 skip-certificate-check
 windows-slaves
+```
