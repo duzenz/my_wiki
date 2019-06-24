@@ -24,3 +24,9 @@ tar -xvzf output_name.tar.gz
 ```bash
 sudo dmidecode --type 17
 ```
+
+
+# Network
+```bash
+ip a | egrep "inet "
+```
