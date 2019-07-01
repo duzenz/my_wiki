@@ -9,7 +9,6 @@ dh -f
 ```
 
 
-
 # Tar File
 ```bash
 tar czf output_name.tar.gz zipped_folder_name/
@@ -30,3 +29,11 @@ sudo dmidecode --type 17
 ```bash
 ip a | egrep "inet "
 ```
+
+
+# Copy file from remote server
+```bash
+scp remote_username@remote_host:/remote/file.txt /local/directory
+scp -i certificate.pem remote_username@remote_host:/remote/file.txt /local/directory
+```
+
