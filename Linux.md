@@ -37,3 +37,8 @@ scp remote_username@remote_host:/remote/file.txt /local/directory
 scp -i certificate.pem remote_username@remote_host:/remote/file.txt /local/directory
 ```
 
+# Change root password
+```bash
+sudo -i
+passwd
+```
