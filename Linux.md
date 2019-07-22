@@ -43,7 +43,7 @@ sudo -i
 passwd
 ```
 
-#kill process on port
+# Kill process on port
 ```bash
 sudo fuser -k {{port}}/tcp
 ```
