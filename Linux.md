@@ -42,3 +42,8 @@ scp -i certificate.pem remote_username@remote_host:/remote/file.txt /local/direc
 sudo -i
 passwd
 ```
+
+#kill process on port
+```bash
+sudo fuser -k {{port}}/tcp
+```
