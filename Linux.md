@@ -47,3 +47,15 @@ passwd
 ```bash
 sudo fuser -k {{port}}/tcp
 ```
+
+# Using snap
+```bash
+snap find <search_text>
+snap install <package>
+snap list
+snap changes
+snap refresh <package>
+snap refresh --list
+snap remove <package>
+```
+
