@@ -43,6 +43,11 @@ sudo -i
 passwd
 ```
 
+# Change owner
+```bash
+chown user:group /path/to/file
+```
+
 # Kill process on port
 ```bash
 sudo fuser -k {{port}}/tcp
