@@ -64,3 +64,14 @@ snap refresh --list
 snap remove <package>
 ```
 
+# Using alias
+```bash
+alias
+alias hede="docker ps"
+unalias alias_name
+
+#add your aliases permamnently
+vim ~/.bashrc
+source ~/.bashrc
+```
+
