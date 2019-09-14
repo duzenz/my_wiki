@@ -140,7 +140,12 @@ $ git reset --keep <commit>
 
 ##  Create patch and apply
 ```bash
-git format-patch -1 <commit_sha> # create patch
-git apply --stat file.patch # check applicability of patch
-git am --signoff < file.patch # apply patch
+# create patch
+git format-patch -1 <commit_sha>
+
+# check applicability of patch
+git apply --stat file.patch
+
+# apply patch
+git am --signoff < file.patch 
 ```
