@@ -80,4 +80,6 @@ source ~/.bashrc
 ```bash
 -v     natural sort of (version) numbers within text
 ls -1v log*
+
+find -type f | wc -l #count of files in a folder
 ```
