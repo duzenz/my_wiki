@@ -83,3 +83,10 @@ ls -1v log*
 
 find -type f | wc -l #count of files in a folder
 ```
+
+# Remove files before a date
+```bash
+find . -name "*.gz" -type f -mtime +45 -exec rm -f {} \;
+```
+
+
