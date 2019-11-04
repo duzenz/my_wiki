@@ -121,6 +121,7 @@ $ git push --tags
 ```bash
 # Discard all local changes in your working directory
 $ git reset --hard HEAD
+$ git reset --hard origin/master
 
 # Discard local changes in a specific file
 $ git checkout HEAD <file>
