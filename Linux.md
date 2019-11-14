@@ -8,7 +8,6 @@ du -sh folder_name
 dh -f
 ```
 
-
 # Tar File
 ```bash
 tar czf output_name.tar.gz zipped_folder_name/
@@ -89,4 +88,16 @@ find -type f | wc -l #count of files in a folder
 find . -name "*.gz" -type f -mtime +45 -exec rm -f {} \;
 ```
 
-
+# grep
+```bash
+grep "some string" file
+grep -i "REact" file #insensitive
+grep -c "react" index.js #count
+-r recursive
+-o only print the matching part the line
+-a search binaries
+-F dont treat the match string as a regex
+-l only show filenames
+-v find lines that dont match
+-A shows context grep -A 3 foo shows extra 3 lines.
+```
