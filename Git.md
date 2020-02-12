@@ -82,6 +82,10 @@ $ git rebase --abort
 # Continue a rebase after resolving conflicts
 $ git rebase --continue
 
+# Rebase your branch on master
+$ git checkout feature1
+$ git rebase master
+
 # Use your configured merge tool to solve conflicts
 $ git mergetool
 
