@@ -8,6 +8,11 @@ du -sh folder_name
 dh -f
 ```
 
+```bash
+#show folder sized and sort
+du -chd 1 | sort -h
+```
+
 # Tar File
 ```bash
 tar czf output_name.tar.gz zipped_folder_name/
