@@ -55,7 +55,10 @@ chown user:group /path/to/file
 # Kill process on port
 ```bash
 sudo fuser -k {{port}}/tcp
+or
+sudo kill -9 $(sudo lsof -t -i:9001)
 ```
+
 
 # Using snap
 ```bash
