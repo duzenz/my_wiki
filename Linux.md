@@ -109,3 +109,11 @@ grep -c "react" index.js #count
 -v find lines that dont match
 -A shows context grep -A 3 foo shows extra 3 lines.
 ```
+
+#useful commands
+```bash
+# finding out your 10 most used commands 
+history | sed -e 's/ *[0-9][0-9]* *//' | sort | uniq -c | sort -rn | head -10
+```
+
+
